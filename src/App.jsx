@@ -1,19 +1,12 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-interface FartEntry {
-  id: number
-  address: string
-  power: number
-  timestamp: number
-}
-
 function App() {
   const [pumpPower, setPumpPower] = useState(0)
   const [totalFarts, setTotalFarts] = useState(0)
   const [isCharging, setIsCharging] = useState(false)
   const [chargeLevel, setChargeLevel] = useState(0)
-  const [leaderboard, setLeaderboard] = useState<FartEntry[]>([])
+  const [leaderboard, setLeaderboard] = useState([])
   const [showExplosion, setShowExplosion] = useState(false)
   const [connectionStatus, setConnectionStatus] = useState('DISCONNECTED')
   const [uploadProgress, setUploadProgress] = useState(0)
@@ -31,7 +24,7 @@ function App() {
     }
   }, [])
 
-  const saveStats = (power: number, farts: number, board: FartEntry[]) => {
+  const saveStats = (power, farts, board) => {
     localStorage.setItem('ftp-stats', JSON.stringify({
       pumpPower: power,
       totalFarts: farts,
@@ -78,7 +71,7 @@ function App() {
     }
   }
 
-  const executeFart = (fartPower: number) => {
+  const executeFart = (fartPower) => {
     const newPower = pumpPower + fartPower
     const newTotal = totalFarts + 1
 
@@ -87,7 +80,7 @@ function App() {
 
     playFartSound()
 
-    const newEntry: FartEntry = {
+    const newEntry = {
       id: Date.now(),
       address: generateDegeneAddress(),
       power: fartPower,
@@ -105,7 +98,7 @@ function App() {
   }
 
   useEffect(() => {
-    let interval: number
+    let interval
     if (isCharging) {
       interval = setInterval(() => {
         setChargeLevel(prev => Math.min(prev + 5, 1000))
@@ -115,7 +108,7 @@ function App() {
   }, [isCharging])
 
   const playFartSound = () => {
-    const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)()
     const oscillator = audioContext.createOscillator()
     const gainNode = audioContext.createGain()
 
@@ -141,7 +134,7 @@ function App() {
     return address + '...'
   }
 
-  const formatTime = (timestamp: number) => {
+  const formatTime = (timestamp) => {
     const seconds = Math.floor((Date.now() - timestamp) / 1000)
     if (seconds < 60) return `${seconds}s ago`
     if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`
