@@ -31,7 +31,7 @@ FART TO PUMP is an interactive meme website where degens can:
 ## Tech Stack
 
 - React 19
-- TypeScript
+- JavaScript (ES6+)
 - Vite
 - Pure CSS animations (no dependencies!)
 - Web Audio API for sound effects
