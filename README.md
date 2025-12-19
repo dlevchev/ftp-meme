@@ -1,23 +1,31 @@
-# FTP Protocol - Fart To Pump 💨🚀
+# FART TO PUMP (FTP) 💨🚀
 
-The most degen meme website ever created. A cheeky parody of the File Transfer Protocol, but instead of transferring files, you're transferring... well, gas to the moon.
+**Send Farts to Slingoor via FTP Protocol**
+
+The most degen meme website ever created. A cheeky parody of the File Transfer Protocol, but instead of transferring files, you're transferring farts to Slingoor!
 
 ## What is this?
 
-FTP Protocol is an interactive meme website where users can:
+FART TO PUMP is an interactive meme website where degens can:
 - **Charge up their fart power** by holding down the big button
-- **Upload to the moon** via the Fart Transfer Protocol (PORT 21)
+- **Send farts to Slingoor** via the Fart Transfer Protocol
+- **Watch the live chart** embedded from DexScreener
+- **Copy the Contract Address (CA)** with one click
 - **Compete on the leaderboard** for the biggest pumps
-- **Watch their stats grow** with persistent localStorage tracking
+- **Track their stats** with persistent localStorage
+
+**Contract Address:** `J53gZe8hsT2zqCkSm3rh8HpiE5QNEwiZmZN977wipump`
 
 ## Features
 
-- 🎮 **Interactive Gameplay**: Hold to charge, release to fart
+- 🎮 **Interactive Gameplay**: Hold to charge, release to send farts to Slingoor
 - 💨 **Realistic Fart Sounds**: Procedurally generated using Web Audio API
-- ✨ **Sick Animations**: Explosions, particles, and space vibes
+- 📊 **Live DexScreener Chart**: Embedded trading chart
+- 📋 **Copy CA Button**: One-click contract address copying
+- ✨ **Terminal Aesthetics**: CRT scanlines, green phosphor glow, retro vibes
+- 💥 **Sick Animations**: Explosions, particles, and terminal effects
 - 🏆 **Live Leaderboard**: Top 10 biggest pumpers
-- 📊 **Stats Tracking**: All your degen achievements saved locally
-- 🎨 **Degen Aesthetics**: Neon colors, retro terminal vibes, space theme
+- 📈 **Stats Tracking**: All your degen achievements saved locally
 - 📱 **Responsive**: Works on desktop and mobile
 
 ## Tech Stack
@@ -50,9 +58,20 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 1. **Press and HOLD** the big button to charge your fart power
 2. Watch the charge meter fill up (max 1000)
-3. **Release** to upload your fart via FTP Protocol
+3. **Release** to send farts to Slingoor via FTP Protocol
 4. Enjoy the explosion and watch your pump power grow!
-5. Compete for the top spot on the leaderboard
+5. Check the live chart to see the price action
+6. Copy the CA to buy or trade
+7. Compete for the top spot on the leaderboard
+
+## Terminal Vibes
+
+The site features authentic retro terminal aesthetics:
+- CRT scanline effects
+- Green phosphor glow (#00ff88)
+- Screen flicker animation
+- Monospace font (Courier New)
+- Terminal-style borders and UI elements
 
 ## Why?
 
